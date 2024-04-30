@@ -36,7 +36,7 @@
 </nav>
 <div class="row app-content no-gutters" >
   <div class="data-container col" >
- <img style="height:100%;width:100%" src="https://via.placeholder.com/1920x1080?text=Route%20Content%20Goes%20Here"/>
+    <router-view></router-view>
   </div>
  
 </div>
