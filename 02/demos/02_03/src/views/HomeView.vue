@@ -11,19 +11,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" >Restorants</a>
+          <router-link class="nav-link" :to="{name:'restorants'}">Restorants</router-link>
         </li>
         <li class="nav-item">
-         <a class="nav-link" >My Orders</a>
+          <router-link class="nav-link" :to="{name:'orders'}">Orders</router-link>
         </li>
         <li class="nav-item">
-         <a class="nav-link" >Near You</a>
+          <router-link class="nav-link" :to="{name:'nearme'}">Near ME</router-link>
         </li>
         <li class="nav-item ">
-         <a class="nav-link" >Account</a>
+          <router-link class="nav-link" :to="{name:'admin'}">Account</router-link>
         </li>
         <li class="nav-item ">
-         <a class="nav-link" ><span class="text-danger">404</span></a>
+         <router-link class="nav-link" to="/dummypage"><span class="text-danger">404</span></router-link>
         </li>
         
       </ul>

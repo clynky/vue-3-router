@@ -9,16 +9,18 @@ import vue3GoogleLogin from 'vue3-google-login'
 import BootstrapVueNext from 'bootstrap-vue-next'
 import 'bootstrap-vue-next/dist/bootstrap-vue-next.css'
 import VueGoogleMaps from '@fawmi/vue-google-maps'
+import router from './router'
 
-const app=createApp(App)
+const app = createApp(App)
 app.use(store);
 app.use(vue3GoogleLogin, {
-    clientId: '258256240295-6rq5sb9d6tpamcnhjiokurdvmok5shjg.apps.googleusercontent.com'
-  })
+  clientId: '258256240295-6rq5sb9d6tpamcnhjiokurdvmok5shjg.apps.googleusercontent.com'
+})
 app.use(BootstrapVueNext);
 app.use(VueGoogleMaps, {
   load: {
-      key: '',
+    key: '',
   },
 })
+app.use(router)
 app.mount('#app')
