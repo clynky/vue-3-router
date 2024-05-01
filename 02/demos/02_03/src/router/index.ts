@@ -6,6 +6,10 @@ import AdminView from '@/views/AdminView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
+    path: '/',
+    redirect: { name: 'restorants' }
+  },
+  {
     path: '/restorants',
     name: 'restorants',
     component: Restorants
