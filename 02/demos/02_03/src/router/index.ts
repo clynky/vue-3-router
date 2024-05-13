@@ -3,6 +3,7 @@ import Restorants from '../components/Restorants/Restorants.vue'
 import Orders from "../components/Orders/Orders.vue"
 import RestorantsNearMe from "../components/Maps/RestorantsNearMe.vue"
 import AdminView from '@/views/AdminView.vue'
+import PageNotFound from "@/components/Generic/PageNotFound.vue"
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -28,6 +29,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/admin',
     name: 'admin',
     component: AdminView
+  },
+  {
+    path: '/:pathMatch(.*)',
+    component: PageNotFound
   }
 ]
 

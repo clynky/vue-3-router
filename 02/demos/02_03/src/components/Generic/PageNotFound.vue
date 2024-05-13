@@ -6,6 +6,9 @@
                 <p class="lead">
                     The page you’re looking for doesn’t exist.
                   </p>
+                  <p>
+                    Route parameters {{ $route.params }}
+                  </p>
                 <a href="/" class="btn btn-primary">Go Home</a>
             </div>
         </div>
